@@ -1,0 +1,14 @@
+{
+    "schema": "http",
+    "host": "localhost",
+    "port": 80,
+    "securePort": 443,
+    "contextPath": "to",
+    "tls": {
+        "certFile": "/opt/godirect/tls/fullchain.pem",
+        "keyFile": "/opt/godirect/tls/privkey.pem"
+    },
+    "rules": {
+        "me": "https://eric.vlaskin.org/"
+    }
+}

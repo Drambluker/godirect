@@ -1,0 +1,14 @@
+version: "3.9" # optional since v1.27.0
+
+services:
+  server:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - /opt/godirect/conf:/opt/godirect/conf:ro
+      - /opt/godirect/tls:/opt/godirect/tls:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
